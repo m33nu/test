@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "b6b64450-f295-48f1-b92e-1424ef416b0f",
+		"name": "Submission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"8F4B12A9-4D4C-C7FB-F9EC-EBDF75AB395\",\r\n    \"institution_id\": \"4878379c-c952-42ed-bd8f-47c5fe63385d\",\r\n    \"year\": 2017,\r\n    \"students_total\": 6043,\r\n    \"undergraduates_total\": 5672,\r\n    \"postgraduates_total\": 371,\r\n    \"staff_total\": 77,\r\n    \"academic_papers\": 7880,\r\n    \"institution_income\": 1738388,\r\n    \"subjects\": [\r\n      {\r\n        \"name\": \"Chemistry\",\r\n        \"academic_papers\": 3267,\r\n        \"students_total\": 2598,\r\n        \"student_rating\": 4.1\r\n      },\r\n      {\r\n        \"name\": \"Biology\",\r\n        \"academic_papers\": 2342,\r\n        \"students_total\": 1873,\r\n        \"student_rating\": 3.9\r\n      }\r\n    ]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/submission",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submission"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/submission?id=8F4B12A9-4D4C-C7FB-F9EC-EBDF75AB395",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submission"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8F4B12A9-4D4C-C7FB-F9EC-EBDF75AB395"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/submissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List - Institution",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/submissions?institution_id=EA8BBED7-4106-94AF-48DD-A1414E386AFB",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"submissions"
+					],
+					"query": [
+						{
+							"key": "institution_id",
+							"value": "EA8BBED7-4106-94AF-48DD-A1414E386AFB"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

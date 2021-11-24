@@ -1,0 +1,8 @@
+{
+  "type": "sqlite",
+  "host": "localhost",
+  "database": "test",
+  "entities": ["./dist/models/*.js"],
+  "synchronize": true,
+  "logging": true
+}

@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "55752dc6-e879-468e-9f47-e84bf769fdaf",
+		"name": "Institution",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Prestigious Science University\",\r\n    \"address\": \"P.O. Box 114, 6922 Volutpat. Ave\",\r\n    \"country\": \"Jordan\",\r\n    \"region\": \"Metropolitana de Santiago\",\r\n    \"id\": \"EA8BBED7-4106-94AF-48DD-A1414E386AFB\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/institution",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"institution"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/institution?id=212ee38c-6741-41b7-9d6c-f5fc0bd7d78a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"institution"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "212ee38c-6741-41b7-9d6c-f5fc0bd7d78a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/institutions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"institutions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

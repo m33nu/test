@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "208d6502-356e-409c-a58d-9d9b4cf37b6e",
+		"name": "Subject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/subjects",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"subjects"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
